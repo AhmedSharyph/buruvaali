@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Buruvaali Example</title>
+<link rel="stylesheet" href="buruvaali.css">
+</head>
+<body>
+
+<h2>Buruvaali Select Demo</h2>
+
+<div class="buruvaali" data-allow-add="false">
+  <div class="buruvaali-selection">
+    <input type="text" class="buruvaali-search" placeholder="Select a country">
+  </div>
+  <div class="buruvaali-dropdown"></div>
+  <select class="buruvaali-select">
+    <option value="">Select</option>
+    <option>Maldives</option>
+    <option>Bangladesh</option>
+    <option>India</option>
+    <option>Sri Lanka</option>
+  </select>
+</div>
+
+<div class="buruvaali" data-allow-add="true">
+  <div class="buruvaali-selection">
+    <input type="text" class="buruvaali-search" placeholder="Select or add fruit">
+  </div>
+  <div class="buruvaali-dropdown"></div>
+  <select class="buruvaali-select">
+    <option value="">Select</option>
+    <option>Apple</option>
+    <option>Banana</option>
+    <option>Mango</option>
+  </select>
+</div>
+
+<script src="buruvaali.js"></script>
+<script>
+document.querySelectorAll('.buruvaali').forEach(el => new Buruvaali(el));
+</script>
+
+</body>
+</html>
